@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-card">
+      <h2>Login</h2>
+      <form id="loginForm">
+        <div class="form-group">
+          <label for="email">Email or Username</label>
+          <input type="text" id="email" placeholder="Enter your email or username">
+          <div class="error" id="emailError">Please enter a valid email.</div>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter your password">
+          <div class="error" id="passwordError">Password cannot be empty.</div>
+        </div>
+        <div class="options">
+          <label>
+            <input type="checkbox"> Remember me
+          </label>
+          <a href="#">Forgot Password?</a>
+        </div>
+        <button type="submit" class="btn">Login</button>
+        <div class="divider">or continue with</div>
+        <div class="social-buttons">
+          <button type="button" class="social-btn google">Google</button>
+          <button type="button" class="social-btn facebook">Facebook</button>
+        </div>
+
+        <div class="signup">
+          Don't have an account? <a href="#">Sign up</a>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
